@@ -153,7 +153,7 @@ class AsyncRoku(object):
         app = Application(
             id=plugin.get("id"),
             version=plugin.get("version"),
-            name=plugin.text or "",
+            name=plugin.get("name") or "",
             roku=self,
         )
 
